@@ -1,0 +1,13 @@
+.SecondarySection {
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+@media (min-width: 800px) {
+  .SecondarySection {
+    margin: 1rem 0;
+    height: 70%;
+    width: 40%;
+    padding: 3rem 4rem;
+  }
+}

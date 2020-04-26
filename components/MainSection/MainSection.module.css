@@ -1,0 +1,85 @@
+.MainSection {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.ProfilePicture {
+  background-image: url(https://via.placeholder.com/480);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.ProfilePicture::before {
+  content: '';
+  position: absolute;
+  left: -7%;
+  bottom: -63%;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+}
+
+.ProfilePicture::after {
+  content: '';
+  position: absolute;
+  left: 7%;
+  bottom: -63%;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  transform: rotate(168deg);
+  -webkit-transform: rotate(168deg);
+  -moz-transform: rotate(168deg);
+  -o-transform: rotate(168deg);
+}
+
+.Info {
+  margin-top: 190px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.Info > h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.Info > p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.ActionButtons {
+  position: absolute;
+  bottom: 5%;
+}
+
+@media (min-width: 800px) {
+  .MainSection {
+    height: 87.5%;
+    width: 32%;
+  }
+}
