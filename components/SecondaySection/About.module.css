@@ -1,0 +1,80 @@
+.Title {
+  font-size: 1.5rem;
+  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
+  padding-bottom: 1.5rem;
+}
+
+.Row {
+  display: flex;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.Row > :last-child {
+  padding-left: 1.2rem;
+}
+
+.Row > :first-child {
+  padding-right: 1.2rem;
+}
+
+.Row > div {
+  width: 50%;
+  padding-top: 1.5rem;
+}
+
+.Intro {
+  text-align: justify;
+  border-right: solid 1px rgba(121, 201, 109, 0.5);
+}
+
+.Intro > span {
+  color: #646464;
+}
+
+.PersonalInfo {
+  color: #646464;
+}
+
+.InfoRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.InfoRow > :first-child {
+  margin-right: 5px;
+  padding: 0 8px;
+  background: #78cc6d;
+  font-size: 14px;
+  color: #fefefe;
+  font-weight: 400;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.FunFacts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.FunFact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.FunFact:not(:last-child) {
+  border-right: solid 1px rgba(121, 201, 109, 0.5);
+}
+
+.MoreAboutMe {
+  margin-top: 1rem;
+}
