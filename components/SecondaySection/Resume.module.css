@@ -1,0 +1,92 @@
+.Title {
+  font-size: 1.5rem;
+  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
+  padding-bottom: 1rem;
+}
+
+.Experiences {
+  margin-top: 1.5rem;
+}
+.Experience {
+  margin-bottom: 1.5rem;
+}
+
+.JobTime {
+  border: solid 1px #78cc6d;
+  color: #78cc6d;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.JobTitle {
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.WorkPlace {
+  margin-bottom: 0.3rem;
+  color: #999;
+}
+
+.Summary {
+  color: #646464;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+}
+
+.SkillBox {
+  display: flex;
+}
+
+.Stack {
+  width: 50%;
+  padding: 1rem;
+  border-right: solid 1px #78cc6d;
+  padding-left: 1rem 0.5rem;
+}
+
+.Stack > h3 {
+  margin-bottom: 1.5rem;
+}
+
+.Stack > p {
+  text-align: right;
+}
+
+.Techs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.TechIcon {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.Knowledge {
+  width: 50%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.Knowledge > h3 {
+  margin-bottom: 1.5rem;
+}
+
+.KnowledgeItem {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.Checkmark {
+  margin-right: 0.5rem;
+}
+
+.KnowledgeItem {
+  display: flex;
+}
