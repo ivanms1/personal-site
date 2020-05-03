@@ -38,6 +38,7 @@
 
 .SkillBox {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .Stack {

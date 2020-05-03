@@ -1,0 +1,32 @@
+.SlideContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.Text {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.65;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.SlideIcon {
+  height: 50px;
+  margin-top: 0.5rem;
+  width: 50px;
+}
+
+.Name {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.Position {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}

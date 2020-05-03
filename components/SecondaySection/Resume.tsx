@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Testimonials from './Testimonials';
+
 import javascript from '../../assets/icons/javascript.svg';
 import reactIcon from '../../assets/icons/react-icon.svg';
 import nodejs from '../../assets/icons/nodejs.svg';
@@ -99,6 +101,8 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      <h1 className={styles.Title}>Testimonials</h1>
+      <Testimonials />
     </div>
   );
 };
