@@ -62,20 +62,61 @@
 }
 
 .Info > h1 {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-size: 2rem;
   letter-spacing: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .Info > p {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #78cc6d;
+  margin-bottom: 0.5rem;
+}
+
+.Socials {
+  display: flex;
+}
+
+.Socials > :first-child {
+  margin-right: 1rem;
+}
+
+.Socials > a > svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.Socials > a > svg > path {
+  transition: all 0.2s linear;
+}
+
+.Socials > a > svg:hover > path {
+  fill: #78cc6d;
 }
 
 .ActionButtons {
+  border-top: solid 1px rgba(121, 201, 109, 0.5);
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  bottom: 5%;
+  width: 100%;
+  bottom: 0;
+}
+
+.ActionButtons > p {
+  width: 50%;
+  padding: 1rem 4rem 1rem 4rem;
+  border-right: solid 1px rgba(121, 201, 109, 0.5);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.ActionButtons > p:hover {
+  color: #78cc6d;
 }
 
 @media (min-width: 800px) {
