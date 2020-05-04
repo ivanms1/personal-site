@@ -2,15 +2,15 @@ import React from 'react';
 
 import Testimonials from './Testimonials';
 
-import javascript from '../../assets/icons/javascript.svg';
-import reactIcon from '../../assets/icons/react-icon.svg';
-import nodejs from '../../assets/icons/nodejs.svg';
-import typescript from '../../assets/icons/typescript.svg';
+import Javascript from '../../assets/icons/javascript.svg';
+import ReactIcon from '../../assets/icons/react-icon.svg';
+import Nodejs from '../../assets/icons/nodejs.svg';
+import Typescript from '../../assets/icons/typescript.svg';
 import graphql from '../../assets/icons/graphql.png';
-import mongodb from '../../assets/icons/mongodb.svg';
-import sass from '../../assets/icons/sass.svg';
-import cypress from '../../assets/icons/cypress.svg';
-import checkmark from '../../assets/icons/checkmark.svg';
+import MongoDB from '../../assets/icons/mongodb.svg';
+import Sass from '../../assets/icons/sass.svg';
+import Cypress from '../../assets/icons/cypress.svg';
+import Checkmark from '../../assets/icons/checkmark.svg';
 
 import styles from './Resume.module.css';
 
@@ -66,22 +66,14 @@ const Resume = () => {
         <div className={styles.Stack}>
           <h3>Stack</h3>
           <div className={styles.Techs}>
-            <img
-              className={styles.TechIcon}
-              src={javascript}
-              alt='javascript'
-            />
-            <img className={styles.TechIcon} src={reactIcon} alt='react' />
-            <img className={styles.TechIcon} src={nodejs} alt='node js' />
-            <img
-              className={styles.TechIcon}
-              src={typescript}
-              alt='typescript'
-            />
+            <Javascript />
+            <ReactIcon />
+            <Nodejs />
+            <Typescript />
             <img className={styles.TechIcon} src={graphql} alt='graphql' />
-            <img className={styles.TechIcon} src={mongodb} alt='mongodb' />
-            <img className={styles.TechIcon} src={sass} alt='sass' />
-            <img className={styles.TechIcon} src={cypress} alt='cypress' />
+            <MongoDB />
+            <Sass />
+            <Cypress />
           </div>
           <p>and more...</p>
         </div>
@@ -89,12 +81,8 @@ const Resume = () => {
           <h3>Knowledge</h3>
           <div className={styles.KnowledgeList}>
             {knowledgeItems.map((item) => (
-              <div key='item' className={styles.KnowledgeItem}>
-                <img
-                  className={styles.Checkmark}
-                  src={checkmark}
-                  alt='checkmark'
-                />
+              <div key={item} className={styles.KnowledgeItem}>
+                <Checkmark />
                 <p>{item}</p>
               </div>
             ))}

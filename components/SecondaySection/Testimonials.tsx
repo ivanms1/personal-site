@@ -20,7 +20,7 @@ const testimonials = [
     img: 'https://avatars.dicebear.com/v2/bottts/florin.svg',
   },
   {
-    id: 0,
+    id: 1,
     name: 'Sonam Perjore',
     position: 'Queen Bee',
     text:
@@ -28,7 +28,7 @@ const testimonials = [
     img: 'https://avatars.dicebear.com/v2/female/sonam.svg',
   },
   {
-    id: 0,
+    id: 2,
     name: 'Bill Gates',
     position: 'Galaxy Overlord',
     text:
@@ -71,7 +71,7 @@ const Testimonials = () => {
     >
       <Slider>
         {testimonials.map((t) => (
-          <Testimonial testimonial={t} />
+          <Testimonial key={t.id} testimonial={t} />
         ))}
       </Slider>
     </CarouselProvider>

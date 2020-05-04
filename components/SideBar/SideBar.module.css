@@ -10,9 +10,25 @@
 }
 
 .Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   font-size: 0.7rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.Item:hover {
+  fill: #78cc6d;
+  color: #78cc6d;
+}
+
+.Item > svg {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 0.5rem;
 }
 
 .Item > span {

@@ -63,6 +63,12 @@
   justify-content: space-between;
 }
 
+.Techs > svg {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
 .TechIcon {
   height: 100px;
   width: 100px;
@@ -84,7 +90,7 @@
   letter-spacing: 0.1rem;
 }
 
-.Checkmark {
+.KnowledgeItem > svg {
   margin-right: 0.5rem;
 }
 
