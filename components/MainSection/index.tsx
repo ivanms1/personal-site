@@ -2,6 +2,7 @@ import React from 'react';
 
 import Github from '../../assets/icons/github.svg';
 import Twitter from '../../assets/icons/twitter.svg';
+import Linkedin from '../../assets/icons/linkedin.svg';
 
 import styles from './MainSection.module.css';
 
@@ -18,6 +19,9 @@ function MainSection() {
           </a>
           <a href='https://github.com/ivanms1' target='_blank'>
             <Github />
+          </a>
+          <a href='https://www.linkedin.com/in/ivansaldano/' target='_blank'>
+            <Linkedin />
           </a>
         </div>
         <div className={styles.ActionButtons}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import Testimonials from './Testimonials';
 
@@ -11,6 +12,8 @@ import MongoDB from '../../assets/icons/mongodb.svg';
 import Sass from '../../assets/icons/sass.svg';
 import Cypress from '../../assets/icons/cypress.svg';
 import Checkmark from '../../assets/icons/checkmark.svg';
+
+import { spring } from '../../helpers/animations';
 
 import styles from './Resume.module.css';
 
@@ -27,7 +30,11 @@ const knowledgeItems = [
 
 const Resume = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ x: -500, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={spring}
+    >
       <h1 className={styles.Title}>Resume</h1>
       <div className={styles.Experiences}>
         <div className={styles.Experience}>
@@ -91,7 +98,7 @@ const Resume = () => {
       </div>
       <h1 className={styles.Title}>Testimonials</h1>
       <Testimonials />
-    </div>
+    </motion.div>
   );
 };
 

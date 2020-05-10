@@ -1,10 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import { spring } from '../../helpers/animations';
 
 import styles from './About.module.css';
 
 const About = () => {
   return (
-    <div className={styles.About}>
+    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
       <h1 className={styles.Title}>About Me</h1>
       <div className={styles.Row}>
         <div className={styles.Intro}>
@@ -58,7 +61,7 @@ const About = () => {
           eaque quia sunt ad accusamus est non. Consequatur, facilis non.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

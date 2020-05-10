@@ -1,10 +1,47 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import ContactImage from '../../assets/icons/contact.svg';
+
+import { spring } from '../../helpers/animations';
+
+import styles from './Contact.module.css';
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Get in Touch</h1>
-    </div>
+    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
+      <h1 className={styles.Title}>Get in Touch</h1>
+      <div className={styles.Socials}>
+        <div className={styles.SocialCard}>
+          <p className={styles.Social}>Email:</p>
+          <p className={styles.SocialInfo}>contact@saldano.com</p>
+        </div>
+        <div className={styles.SocialCard}>
+          <p className={styles.Social}>Twitter:</p>
+          <a href='https://twitter.com/ivanms1' className={styles.SocialInfo}>
+            /ivanms1
+          </a>
+        </div>
+        <div className={styles.SocialCard}>
+          <p className={styles.Social}>Linkedin:</p>
+          <a
+            className={styles.SocialInfo}
+            href='https://www.linkedin.com/in/ivansaldano/'
+          >
+            /ivansaldano
+          </a>
+        </div>
+        <div className={styles.SocialCard}>
+          <p className={styles.Social}>Github:</p>
+          <a href='https://github.com/ivanms1' className={styles.SocialInfo}>
+            /ivanms1
+          </a>
+        </div>
+      </div>
+      <div className={styles.ContactImageContainer}>
+        <ContactImage />
+      </div>
+    </motion.div>
   );
 };
 

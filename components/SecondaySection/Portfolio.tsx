@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import { spring } from '../../helpers/animations';
 
 import styles from './Portfolio.module.css';
 
@@ -18,7 +21,7 @@ const projectsRight = [
 
 const Portfolio = () => {
   return (
-    <div>
+    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
       <h1 className={styles.Title}>Portfolio</h1>
       <div className={styles.MainContainer}>
         <div className={styles.Left}>
@@ -42,7 +45,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

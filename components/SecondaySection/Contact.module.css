@@ -1,0 +1,44 @@
+.Title {
+  font-size: 1.5rem;
+  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
+  padding-bottom: 1rem;
+}
+
+.Socials {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.SocialCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Social {
+  padding: 0 8px;
+  background: #78cc6d;
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+  color: #fefefe;
+  font-weight: 400;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.SocialInfo {
+  text-decoration: none;
+  color: #78cc6d;
+}
+.ContactImageContainer {
+  margin-top: 3rem;
+}
+.ContactImageContainer > svg {
+  height: 100%;
+  width: 100%;
+}

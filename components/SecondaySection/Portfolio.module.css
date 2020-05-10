@@ -12,16 +12,9 @@
   width: 50%;
   border-right: solid 1px rgba(121, 201, 109, 0.5);
 }
-.Left > .Project {
-  /* padding: 1rem 1rem 1rem 0; */
-}
 
 .Right {
   width: 50%;
-}
-
-.Right > .Project {
-  /* padding: 1rem 0 1rem 1rem; */
 }
 
 .Project {
