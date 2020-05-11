@@ -10,7 +10,7 @@
   "dependencies": {
     "babel-plugin-inline-react-svg": "^1.1.1",
     "framer-motion": "^1.10.3",
-    "next": "9.3.1",
+    "next": "9.3.2",
     "next-images": "^1.4.0",
     "pure-react-carousel": "^1.27.1",
     "react": "16.13.1",
