@@ -1,14 +1,10 @@
 .MainSection {
   background: #fff;
   position: relative;
-  overflow: hidden;
+  height: calc(100vh - 78px);
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
+  overflow-x: hidden;
 }
 
 .ProfilePicture {
@@ -52,7 +48,7 @@
 }
 
 .Info {
-  margin-top: 275px;
+  margin-top: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -108,11 +104,15 @@
 
 .ActionButtons > p {
   width: 50%;
-  padding: 1rem 4rem 1rem 4rem;
-  border-right: solid 1px rgba(121, 201, 109, 0.5);
+  padding: 1rem 3rem 1rem 3rem;
+
   text-align: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.ActionButtons :first-child {
+  border-right: solid 1px rgba(121, 201, 109, 0.5);
 }
 
 .ActionButtons > p:hover {
@@ -123,5 +123,19 @@
   .MainSection {
     height: 87.5%;
     width: 32%;
+    overflow: hidden;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+      0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+
+  .Info {
+    margin-top: 275px;
+  }
+
+  .ActionButtons > p {
+    padding: 1rem 4rem 1rem 4rem;
   }
 }

@@ -2,6 +2,7 @@
   background: #fff;
   border-radius: 0 4px 4px 0;
   overflow: auto;
+  z-index: 1;
 }
 
 .SecondarySection::-webkit-scrollbar {
