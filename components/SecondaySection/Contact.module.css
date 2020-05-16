@@ -1,20 +1,19 @@
 .Title {
   font-size: 1.5rem;
-  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
   padding-bottom: 1rem;
 }
 
 .Socials {
-  display: grid;
-  margin-top: 2rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
 .SocialCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .Social {
@@ -41,4 +40,21 @@
 .ContactImageContainer > svg {
   height: 100%;
   width: 100%;
+}
+
+@media (min-width: 800px) {
+  .Title {
+    border-bottom: solid 1px rgba(121, 201, 109, 0.5);
+  }
+
+  .Socials {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .SocialCard {
+    margin-bottom: 0;
+  }
 }

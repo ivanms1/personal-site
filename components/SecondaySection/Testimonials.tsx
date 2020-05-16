@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-  Dot,
-} from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 
 import styles from './Testimonials.module.css';
 
@@ -65,8 +58,9 @@ const Testimonials = () => {
   return (
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={30}
+      naturalSlideHeight={65}
       totalSlides={3}
+      className={styles.Carousel}
       isPlaying
     >
       <Slider>

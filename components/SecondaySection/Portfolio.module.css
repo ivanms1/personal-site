@@ -1,20 +1,11 @@
 .Title {
   font-size: 1.5rem;
-  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
   padding-bottom: 1rem;
 }
 
 .MainContainer {
   display: flex;
-}
-
-.Left {
-  width: 50%;
-  border-right: solid 1px rgba(121, 201, 109, 0.5);
-}
-
-.Right {
-  width: 50%;
+  flex-direction: column;
 }
 
 .Project {
@@ -45,4 +36,23 @@
 .Project > p {
   text-align: center;
   font-size: 1.1rem;
+}
+
+@media (min-width: 800px) {
+  .Title {
+    border-bottom: solid 1px rgba(121, 201, 109, 0.5);
+  }
+
+  .MainContainer {
+    flex-direction: row;
+  }
+
+  .Left {
+    width: 50%;
+    border-right: solid 1px rgba(121, 201, 109, 0.5);
+  }
+
+  .Right {
+    width: 50%;
+  }
 }
