@@ -147,7 +147,6 @@
 
   .Info {
     margin-top: calc(100% - 1rem);
-    position: absolute;
     justify-content: flex-end;
     height: 50px;
   }
