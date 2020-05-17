@@ -1,11 +1,13 @@
 .SideBar {
   background-color: #fff;
   display: flex;
-
+  position: fixed;
   width: 100%;
   justify-content: space-evenly;
-  border-radius: 3px;
   height: fit-content;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .Item {
@@ -42,5 +44,8 @@
     flex-direction: column;
     padding: 10px;
     width: fit-content;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: none;
   }
 }
