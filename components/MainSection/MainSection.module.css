@@ -104,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 4rem;
   bottom: 0;
 }
 
@@ -152,9 +152,10 @@
   }
 
   .ActionButtons {
-    border-bottom: snone;
+    border-bottom: none;
+    margin-top: 1.5rem;
   }
   .ActionButtons > p {
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
 }
