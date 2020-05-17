@@ -1,14 +1,25 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import Github from '../../assets/icons/github.svg';
 import Twitter from '../../assets/icons/twitter.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 
+import { SectionProps } from '../../pages';
+
 import styles from './MainSection.module.css';
 
-function MainSection() {
+interface MainSectionProps {
+  currentSection: SectionProps['currentSection'];
+}
+
+function MainSection({ currentSection }: MainSectionProps) {
   return (
-    <div className={styles.MainSection}>
+    <div
+      className={classNames(styles.MainSection, {
+        [styles.hideMobile]: currentSection !== 'about',
+      })}
+    >
       <div className={styles.ProfilePicture} />
       <div className={styles.Info}>
         <h1>Ivan Saldano</h1>
