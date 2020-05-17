@@ -13,7 +13,7 @@ import styles from './About.module.css';
 const About = () => {
   return (
     <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
-      <h1 className={styles.Title}>About Me</h1>
+      <h1 className={styles.FirstTitle}>About Me</h1>
       <div className={styles.Row}>
         <div className={styles.Intro}>
           <h3>Hello I am Ivan Saldano</h3>
