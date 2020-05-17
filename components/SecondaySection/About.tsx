@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 
 import { spring } from '../../helpers/animations';
 
+import GlobeIcon from '../../assets/icons/globe.svg';
+import MicIcon from '../../assets/icons/mic.svg';
+import PlaneIcon from '../../assets/icons/plane.svg';
+import GuitarIcon from '../../assets/icons/guitar.svg';
+
 import styles from './About.module.css';
 
 const About = () => {
@@ -40,16 +45,28 @@ const About = () => {
       <h1 className={styles.Title}>Fun Facts</h1>
       <div className={styles.FunFacts}>
         <div className={styles.FunFact}>
-          16 Countries <br /> Visited
+          <GlobeIcon />
+          <p>
+            16 Countries <br /> Visited
+          </p>
         </div>
         <div className={styles.FunFact}>
-          232 Dad Jokes <br /> Told
+          <MicIcon />
+          <p>
+            232 Dad Jokes <br /> Told
+          </p>
         </div>
         <div className={styles.FunFact}>
-          16 Countries <br /> Visited
+          <GuitarIcon />
+          <p>
+            4328 Songs <br /> Played
+          </p>
         </div>
         <div className={styles.FunFact}>
-          16 Countries <br /> Visited
+          <PlaneIcon />
+          <p>
+            51 Flights <br /> Taken
+          </p>
         </div>
       </div>
       <h1 className={styles.Title}>More About Me</h1>

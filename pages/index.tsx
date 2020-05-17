@@ -26,7 +26,10 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <SideBar handleClick={handleSideBarClick} />
-      <MainSection currentSection={currentSection} />
+      <MainSection
+        handleClick={handleSideBarClick}
+        currentSection={currentSection}
+      />
       <SecondarySection currentSection={currentSection} />
     </div>
   );

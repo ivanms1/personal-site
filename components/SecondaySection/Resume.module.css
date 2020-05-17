@@ -53,10 +53,9 @@
 }
 
 .Techs {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Techs > svg {
@@ -107,6 +106,13 @@
     width: 50%;
     border-right: solid 1px #78cc6d;
     padding-left: 1rem 0.5rem;
+  }
+
+  .Techs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .Knowledge {

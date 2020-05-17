@@ -11,9 +11,10 @@ import styles from './MainSection.module.css';
 
 interface MainSectionProps {
   currentSection: SectionProps['currentSection'];
+  handleClick: (section: SectionProps['currentSection']) => void;
 }
 
-function MainSection({ currentSection }: MainSectionProps) {
+function MainSection({ currentSection, handleClick }: MainSectionProps) {
   return (
     <div
       className={classNames(styles.MainSection, {
@@ -37,7 +38,7 @@ function MainSection({ currentSection }: MainSectionProps) {
         </div>
         <div className={styles.ActionButtons}>
           <p>Download CV</p>
-          <p>Contact Me</p>
+          <p onClick={() => handleClick('contact')}>Contact Me</p>
         </div>
       </div>
     </div>
