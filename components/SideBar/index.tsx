@@ -26,7 +26,7 @@ const SideBar = ({ handleClick }: SideBarProps) => {
       </div>
       <div className={styles.Item} onClick={() => handleClick('portfolio')}>
         <PortfolioIcon />
-        <span>Portfolio</span>
+        <span>Blog</span>
       </div>
       <div className={styles.Item} onClick={() => handleClick('contact')}>
         <ContactIcon />

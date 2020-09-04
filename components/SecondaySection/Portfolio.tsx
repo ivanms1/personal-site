@@ -22,7 +22,7 @@ const projectsRight = [
 const Portfolio = () => {
   return (
     <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
-      <h1 className={styles.Title}>Portfolio</h1>
+      <h1 className={styles.Title}>Blog</h1>
       <div className={styles.MainContainer}>
         <div className={styles.Left}>
           {projectsLeft.map((project) => (

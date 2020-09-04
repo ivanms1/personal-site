@@ -38,9 +38,9 @@ const Resume = () => {
       <h1 className={styles.Title}>Resume</h1>
       <div className={styles.Experiences}>
         <div className={styles.Experience}>
-          <p className={styles.JobTime}>Jan 2019 - Present</p>
           <h4 className={styles.JobTitle}>Software Engineer</h4>
           <p className={styles.WorkPlace}>AcceleratorApp.co</p>
+          <p className={styles.JobTime}>Jan 2019 - Present</p>
           <p className={styles.Summary}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium minus labore neque quidem sapiente in eligendi impedit
@@ -48,9 +48,9 @@ const Resume = () => {
           </p>
         </div>
         <div className={styles.Experience}>
-          <p className={styles.JobTime}>Sept 2018 - Jan 2019</p>
           <h4 className={styles.JobTitle}>Software Engineer</h4>
           <p className={styles.WorkPlace}>Hackerbay.io</p>
+          <p className={styles.JobTime}>Sept 2018 - Jan 2019</p>
           <p className={styles.Summary}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium minus labore neque quidem sapiente in eligendi impedit
@@ -58,9 +58,9 @@ const Resume = () => {
           </p>
         </div>
         <div className={styles.Experience}>
-          <p className={styles.JobTime}>Sept 2015 - Sept 2018</p>
           <h4 className={styles.JobTitle}>Linguist Researcher</h4>
           <p className={styles.WorkPlace}>University of the Nations</p>
+          <p className={styles.JobTime}>Sept 2015 - Sept 2018</p>
           <p className={styles.Summary}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium minus labore neque quidem sapiente in eligendi impedit

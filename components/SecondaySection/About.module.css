@@ -117,10 +117,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    grid-gap: 0;
   }
 
   .FunFact {
     border: none;
+    width: 140px;
   }
 
   .FunFact:not(:last-child) {

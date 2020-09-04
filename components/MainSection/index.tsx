@@ -37,7 +37,9 @@ function MainSection({ currentSection, handleClick }: MainSectionProps) {
           </a>
         </div>
         <div className={styles.ActionButtons}>
-          <p>Download CV</p>
+          <a href='assets/IVAN_CV.pdf' target='_blank'>
+            Download CV
+          </a>
           <p onClick={() => handleClick('contact')}>Contact Me</p>
         </div>
       </div>

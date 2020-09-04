@@ -18,7 +18,11 @@ const Contact = () => {
         </div>
         <div className={styles.SocialCard}>
           <p className={styles.Social}>Twitter:</p>
-          <a href='https://twitter.com/ivanms1' className={styles.SocialInfo}>
+          <a
+            href='https://twitter.com/ivanms1'
+            target='_blank'
+            className={styles.SocialInfo}
+          >
             /ivanms1
           </a>
         </div>
@@ -26,6 +30,7 @@ const Contact = () => {
           <p className={styles.Social}>Linkedin:</p>
           <a
             className={styles.SocialInfo}
+            target='_blank'
             href='https://www.linkedin.com/in/ivansaldano/'
           >
             /ivansaldano
@@ -33,7 +38,11 @@ const Contact = () => {
         </div>
         <div className={styles.SocialCard}>
           <p className={styles.Social}>Github:</p>
-          <a href='https://github.com/ivanms1' className={styles.SocialInfo}>
+          <a
+            href='https://github.com/ivanms1'
+            target='_blank'
+            className={styles.SocialInfo}
+          >
             /ivanms1
           </a>
         </div>
