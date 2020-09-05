@@ -1,48 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useQuery } from '@apollo/client';
+
+import QUERY_GET_BLOG from './queryGetBlog.graphql';
 
 import { spring } from '../../helpers/animations';
 
 import styles from './Portfolio.module.css';
-
-const projectsLeft = [
-  'https://source.unsplash.com/random/400x650',
-  'https://source.unsplash.com/random/500x500',
-  'https://source.unsplash.com/random/600x400',
-  'https://source.unsplash.com/random/450x600',
-];
-
-const projectsRight = [
-  'https://source.unsplash.com/random/400x420',
-  'https://source.unsplash.com/random/400x450',
-  'https://source.unsplash.com/random/400x550',
-  'https://source.unsplash.com/random/400x500',
-];
+import Spinner from '../Spinner';
 
 const Portfolio = () => {
+  const { data, loading } = useQuery(QUERY_GET_BLOG);
+
+  const { user } = data ?? {};
   return (
     <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
       <h1 className={styles.Title}>Blog</h1>
       <div className={styles.MainContainer}>
-        <div className={styles.Left}>
-          {projectsLeft.map((project) => (
-            <div key={project} className={styles.Project}>
-              <div className={styles.ImageContainer}>
-                <img src={project} alt='random' />
-              </div>
-              <p>Some Name</p>
-            </div>
-          ))}
-        </div>
-        <div className={styles.Right}>
-          {projectsRight.map((project) => (
-            <div key={project} className={styles.Project}>
-              <div className={styles.ImageContainer}>
-                <img src={project} alt='random' />
-              </div>
-              <p>Some Name</p>
-            </div>
-          ))}
+        <div className={styles.Posts}>
+          {loading ? (
+            <Spinner />
+          ) : (
+            user?.publication?.posts.map((post: any) => (
+              <a
+                href={`https://ivanms1.hashnode.dev/${post.slug}`}
+                key={post._id}
+                target='_blank'
+                className={styles.Post}
+              >
+                <div className={styles.TitleAndImage}>
+                  <p>{post.title}</p>
+                  <div className={styles.ImageContainer}>
+                    <img src={post.coverImage} alt={post.title} />
+                  </div>
+                </div>
+                <div className={styles.Summary}>{post.brief}</div>
+              </a>
+            ))
+          )}
         </div>
       </div>
     </motion.div>

@@ -14,7 +14,7 @@ export interface SectionProps {
 const Home = () => {
   const [currentSection, setCurrentSection] = useState<
     SectionProps['currentSection']
-  >('about');
+  >('portfolio');
 
   const handleSideBarClick = (section: SectionProps['currentSection']) => {
     setCurrentSection(section);

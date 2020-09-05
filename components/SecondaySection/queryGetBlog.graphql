@@ -1,0 +1,18 @@
+query GetBlog {
+  user(username: "ivanms1") {
+    _id
+    name
+    publication {
+      title
+      domain
+      posts {
+        _id
+        slug
+        cuid
+        title
+        brief
+        coverImage
+      }
+    }
+  }
+}
