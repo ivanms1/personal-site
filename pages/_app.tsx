@@ -7,6 +7,11 @@ import {
   HttpLink,
 } from '@apollo/client';
 
+import AppProvider from '../components/AppContext';
+
+import './styles.css';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 const uri = 'https://api.hashnode.com';
 
 const client = new ApolloClient({
@@ -14,13 +19,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-import './styles.css';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ApolloProvider client={client}>
-      <Component {...pageProps} />
+      <AppProvider>
+        <Component {...pageProps} />
+      </AppProvider>
     </ApolloProvider>
   );
 }
