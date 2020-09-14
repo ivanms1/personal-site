@@ -69,6 +69,7 @@
 }
 
 .Info > p {
+  color: #78cc6d;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 5rem;
@@ -97,11 +98,21 @@
 }
 
 .ActionButtons {
+  border-top: solid 1px rgba(121, 201, 109, 0.5);
+  border-bottom: solid 1px rgba(121, 201, 109, 0.5);
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 4rem;
   bottom: 0;
+}
+
+.ActionButtons :first-child {
+  border-right: solid 1px rgba(121, 201, 109, 0.5);
+}
+
+.ActionButtons > * {
+  color: #78cc6d;
 }
 
 .ActionButtons > * {
