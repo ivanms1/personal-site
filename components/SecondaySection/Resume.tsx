@@ -38,23 +38,21 @@ const Resume = () => {
       <h1 className={styles.Title}>Resume</h1>
       <div className={styles.Experiences}>
         <div className={styles.Experience}>
-          <h4 className={styles.JobTitle}>Software Engineer</h4>
+          <h4 className={styles.JobTitle}>Fullstack Developer</h4>
           <p className={styles.WorkPlace}>AcceleratorApp.co</p>
-          <p className={styles.JobTime}>Jan 2019 - Present</p>
+          <p className={styles.JobTime}>Jan 2019 - Oct 2020</p>
           <p className={styles.Summary}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium minus labore neque quidem sapiente in eligendi impedit
-            perspiciatis quae excepturi.
+            Maintained and enhanced a SaSS platform used by the most prestigious
+            incubators and accelerators in the world.
           </p>
         </div>
         <div className={styles.Experience}>
-          <h4 className={styles.JobTitle}>Software Engineer</h4>
+          <h4 className={styles.JobTitle}>Frontend Developer</h4>
           <p className={styles.WorkPlace}>Hackerbay.io</p>
           <p className={styles.JobTime}>Sept 2018 - Jan 2019</p>
           <p className={styles.Summary}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium minus labore neque quidem sapiente in eligendi impedit
-            perspiciatis quae excepturi.
+            Created fullstack tutorials and guiddes, helped students in the
+            company's educational program.
           </p>
         </div>
         <div className={styles.Experience}>
@@ -62,9 +60,7 @@ const Resume = () => {
           <p className={styles.WorkPlace}>University of the Nations</p>
           <p className={styles.JobTime}>Sept 2015 - Sept 2018</p>
           <p className={styles.Summary}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium minus labore neque quidem sapiente in eligendi impedit
-            perspiciatis quae excepturi.
+            Conducted various linguistic researchs in Nepal and Thailand.
           </p>
         </div>
       </div>

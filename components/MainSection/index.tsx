@@ -24,7 +24,7 @@ function MainSection({ currentSection, handleClick }: MainSectionProps) {
       <div className={styles.ProfilePicture} />
       <div className={styles.Info}>
         <h1>Ivan Saldano</h1>
-        <p>Software Engineer</p>
+        <p>Fullstack Developer</p>
         <div className={styles.Socials}>
           <a href='https://twitter.com/ivanms1/' target='_blank'>
             <Twitter />

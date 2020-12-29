@@ -18,9 +18,8 @@ const About = () => {
         <div className={styles.Intro}>
           <h3>Hello I am Ivan Saldano</h3>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore hic
-            ab explicabo quis blanditiis neque dolor laborum fugit aliquam
-            repudiandae!
+            Born in Argentina, raised in Chile and now living in South Korea.
+            Always learning and passionate about web development.
           </span>
         </div>
         <div className={styles.PersonalInfo}>
@@ -72,10 +71,10 @@ const About = () => {
       <h1 className={styles.Title}>More About Me</h1>
       <div className={styles.Row}>
         <p className={styles.MoreAboutMe}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum qui
-          error tempore hic, fuga eos fugit itaque quae, labore porro fugiat
-          architecto asperiores doloremque incidunt aperiam modi aliquid ea
-          eaque quia sunt ad accusamus est non. Consequatur, facilis non.
+          I am a highly motivated and committed professional with a proven
+          record of generating and building relationships and hard work. A team
+          player but I also have the ability to work independently. I am skilled
+          and adaptable, able to overcome pressure and deliver quality work.
         </p>
       </div>
     </motion.div>

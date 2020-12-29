@@ -1,6 +1,4 @@
-// next.config.js
 const withImages = require('next-images');
-console.log(withImages().webpack, 'herer');
 
 module.exports = withImages({
   inlineImageLimit: 16384,
@@ -11,6 +9,9 @@ module.exports = withImages({
       loader: 'graphql-tag/loader',
     });
     return config;
+  },
+  images: {
+    domains: ['cdn.hashnode.com'],
   },
   webpackDevMiddleware: (config) => {
     return config;

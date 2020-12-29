@@ -80,6 +80,7 @@
 
 .MoreAboutMe {
   margin-top: 1rem;
+  text-align: justify;
 }
 
 @media (min-width: 800px) {
