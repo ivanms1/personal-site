@@ -27,6 +27,7 @@ const Portfolio = () => {
                 href={`https://ivanms1.hashnode.dev/${post.slug}`}
                 key={post._id}
                 target='_blank'
+                rel='noreferrer'
                 className={styles.Post}
               >
                 <div className={styles.TitleAndImage}>

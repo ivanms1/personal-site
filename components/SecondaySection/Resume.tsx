@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import Testimonials from './Testimonials';
 
@@ -52,7 +53,7 @@ const Resume = () => {
           <p className={styles.JobTime}>Sept 2018 - Jan 2019</p>
           <p className={styles.Summary}>
             Created fullstack tutorials and guiddes, helped students in the
-            company's educational program.
+            company&lsquo;s educational program.
           </p>
         </div>
         <div className={styles.Experience}>
@@ -73,7 +74,7 @@ const Resume = () => {
             <ReactIcon />
             <Nodejs />
             <Typescript />
-            <img className={styles.TechIcon} src={graphql} alt='graphql' />
+            <Image className={styles.TechIcon} src={graphql} alt='graphql' />
             <MongoDB />
             <Sass />
             <Cypress />

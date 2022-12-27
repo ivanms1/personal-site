@@ -26,13 +26,21 @@ function MainSection({ currentSection, handleClick }: MainSectionProps) {
         <h1>Ivan Saldano</h1>
         <p>Fullstack Developer</p>
         <div className={styles.Socials}>
-          <a href='https://twitter.com/ivanms1/' target='_blank'>
+          <a
+            href='https://twitter.com/ivanms1/'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Twitter />
           </a>
-          <a href='https://github.com/ivanms1' target='_blank'>
+          <a href='https://github.com/ivanms1' rel='noreferrer' target='_blank'>
             <Github />
           </a>
-          <a href='https://www.linkedin.com/in/ivansaldano/' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/ivansaldano/'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Linkedin />
           </a>
         </div>

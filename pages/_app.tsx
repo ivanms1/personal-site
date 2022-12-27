@@ -1,5 +1,4 @@
 import { AppProps } from 'next/app';
-import fetch from 'cross-fetch';
 import {
   ApolloClient,
   InMemoryCache,
@@ -15,7 +14,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 const uri = 'https://api.hashnode.com';
 
 const client = new ApolloClient({
-  link: new HttpLink({ uri, fetch }),
+  link: new HttpLink({ uri }),
   cache: new InMemoryCache(),
 });
 

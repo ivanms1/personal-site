@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 
 import styles from './Testimonials.module.css';
@@ -8,24 +9,21 @@ const testimonials = [
     id: 0,
     name: 'Florin Pop',
     position: 'Galaxy Overlord',
-    text:
-      ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
     img: 'https://avatars.dicebear.com/v2/bottts/florin.svg',
   },
   {
     id: 1,
     name: 'Sonam Perjore',
     position: 'Queen Bee',
-    text:
-      ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
     img: 'https://avatars.dicebear.com/v2/female/sonam.svg',
   },
   {
     id: 2,
     name: 'Bill Gates',
     position: 'Galaxy Overlord',
-    text:
-      ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
     img: 'https://avatars.dicebear.com/v2/male/bill.svg',
   },
 ];
@@ -46,7 +44,13 @@ const Testimonial = ({ testimonial }: TestimonialProps) => {
     <Slide className={styles.Slide} index={id}>
       <div className={styles.SlideContent}>
         <p className={styles.Text}>{text}</p>
-        <img src={img} alt={name} className={styles.SlideIcon} />
+        <Image
+          src={img}
+          alt={name}
+          width={50}
+          height={50}
+          className={styles.SlideIcon}
+        />
         <h3 className={styles.Name}>{name}</h3>
         <p className={styles.Position}>{position}</p>
       </div>

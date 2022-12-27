@@ -84,7 +84,7 @@
 
   .ImageContainer > img {
     width: 250px;
-    height: 120px;
+    height: 100%;
     object-fit: cover;
   }
 

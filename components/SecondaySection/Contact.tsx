@@ -20,6 +20,7 @@ const Contact = () => {
           <p className={styles.Social}>Twitter:</p>
           <a
             href='https://twitter.com/ivanms1'
+            rel='noreferrer'
             target='_blank'
             className={styles.SocialInfo}
           >
@@ -31,6 +32,7 @@ const Contact = () => {
           <a
             className={styles.SocialInfo}
             target='_blank'
+            rel='noreferrer'
             href='https://www.linkedin.com/in/ivansaldano/'
           >
             /ivansaldano
@@ -41,6 +43,7 @@ const Contact = () => {
           <a
             href='https://github.com/ivanms1'
             target='_blank'
+            rel='noreferrer'
             className={styles.SocialInfo}
           >
             /ivanms1
