@@ -4,30 +4,6 @@ import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 
 import styles from './Testimonials.module.css';
 
-const testimonials = [
-  {
-    id: 0,
-    name: 'Florin Pop',
-    position: 'Galaxy Overlord',
-    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
-    img: 'https://avatars.dicebear.com/v2/bottts/florin.svg',
-  },
-  {
-    id: 1,
-    name: 'Sonam Perjore',
-    position: 'Queen Bee',
-    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
-    img: 'https://avatars.dicebear.com/v2/female/sonam.svg',
-  },
-  {
-    id: 2,
-    name: 'Bill Gates',
-    position: 'Galaxy Overlord',
-    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
-    img: 'https://avatars.dicebear.com/v2/male/bill.svg',
-  },
-];
-
 interface TestimonialProps {
   testimonial: {
     id: number;
@@ -68,7 +44,7 @@ const Testimonials = () => {
       isPlaying
     >
       <Slider>
-        {testimonials.map((t) => (
+        {TESTIMONIALS.map((t) => (
           <Testimonial key={t.id} testimonial={t} />
         ))}
       </Slider>
@@ -77,3 +53,27 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+const TESTIMONIALS = [
+  {
+    id: 0,
+    name: 'Florin Pop',
+    position: 'Galaxy Overlord',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    img: 'https://avatars.dicebear.com/v2/bottts/florin.svg',
+  },
+  {
+    id: 1,
+    name: 'Sonam Perjore',
+    position: 'Queen Bee',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    img: 'https://avatars.dicebear.com/v2/female/sonam.svg',
+  },
+  {
+    id: 2,
+    name: 'Bill Gates',
+    position: 'Galaxy Overlord',
+    text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam, repudiandae laboriosam cumque voluptates ex.',
+    img: 'https://avatars.dicebear.com/v2/male/bill.svg',
+  },
+];

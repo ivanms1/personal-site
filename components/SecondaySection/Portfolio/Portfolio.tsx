@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useQuery } from '@apollo/client';
 
-import Spinner from '../Spinner';
+import Spinner from '@/components/Spinner';
 
 import QUERY_GET_BLOG from './queryGetBlog.graphql';
 
-import { spring } from '../../helpers/animations';
+import { pageSpring } from '@/const/index';
 
 import styles from './Portfolio.module.css';
 
@@ -15,7 +15,11 @@ const Portfolio = () => {
 
   const { user } = data ?? {};
   return (
-    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
+    <motion.div
+      initial={{ x: -500 }}
+      animate={{ x: 0 }}
+      transition={pageSpring}
+    >
       <h1 className={styles.Title}>Blog</h1>
       <div className={styles.MainContainer}>
         <div className={styles.Posts}>

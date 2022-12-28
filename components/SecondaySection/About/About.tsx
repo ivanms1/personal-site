@@ -1,18 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { spring } from '../../helpers/animations';
+import { pageSpring } from '@/const/index';
 
-import GlobeIcon from '../../assets/icons/globe.svg';
-import MicIcon from '../../assets/icons/mic.svg';
-import PlaneIcon from '../../assets/icons/plane.svg';
-import GuitarIcon from '../../assets/icons/guitar.svg';
+import GlobeIcon from '@/assets/icons/globe.svg';
+import MicIcon from '@/assets/icons/mic.svg';
+import PlaneIcon from '@/assets/icons/plane.svg';
+import GuitarIcon from '@/assets/icons/guitar.svg';
 
 import styles from './About.module.css';
 
 const About = () => {
   return (
-    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
+    <motion.div
+      initial={{ x: -500 }}
+      animate={{ x: 0 }}
+      transition={pageSpring}
+    >
       <h1 className={styles.FirstTitle}>About Me</h1>
       <div className={styles.Row}>
         <div className={styles.Intro}>

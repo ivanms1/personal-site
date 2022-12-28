@@ -1,15 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import ContactImage from '../../assets/icons/contact.svg';
+import ContactImage from '@/assets/icons/contact.svg';
 
-import { spring } from '../../helpers/animations';
+import { pageSpring } from '@/const/index';
 
 import styles from './Contact.module.css';
 
 const Contact = () => {
   return (
-    <motion.div initial={{ x: -500 }} animate={{ x: 0 }} transition={spring}>
+    <motion.div
+      initial={{ x: -500 }}
+      animate={{ x: 0 }}
+      transition={pageSpring}
+    >
       <h1 className={styles.Title}>Get in Touch</h1>
       <div className={styles.Socials}>
         <div className={styles.SocialCard}>

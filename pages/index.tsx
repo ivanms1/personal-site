@@ -4,17 +4,16 @@ import Head from 'next/head';
 import SideBar from '../components/SideBar';
 
 import styles from './index.module.css';
-import MainSection from '../components/MainSection';
-import SecondarySection from '../components/SecondaySection';
+import MainSection from '@/components/MainSection';
+import SecondarySection from '@/components/SecondaySection';
 
 export interface SectionProps {
   currentSection: 'about' | 'resume' | 'portfolio' | 'contact';
 }
 
 const Home = () => {
-  const [currentSection, setCurrentSection] = useState<
-    SectionProps['currentSection']
-  >('about');
+  const [currentSection, setCurrentSection] =
+    useState<SectionProps['currentSection']>('about');
 
   useEffect(() => {
     window?.scrollTo(0, 0);

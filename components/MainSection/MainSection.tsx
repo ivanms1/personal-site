@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Github from '../../assets/icons/github.svg';
-import Twitter from '../../assets/icons/twitter.svg';
-import Linkedin from '../../assets/icons/linkedin.svg';
+import Github from '@/assets/icons/github.svg';
+import Twitter from '@/assets/icons/twitter.svg';
+import Linkedin from '@/assets/icons/linkedin.svg';
 
 import { SectionProps } from '../../pages';
 

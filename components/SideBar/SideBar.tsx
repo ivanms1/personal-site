@@ -2,10 +2,10 @@ import React from 'react';
 
 import { SectionProps } from '../../pages/index';
 
-import AboutIcon from '../../assets/icons/social.svg';
-import ResumeIcon from '../../assets/icons/business.svg';
-import PortfolioIcon from '../../assets/icons/file.svg';
-import ContactIcon from '../../assets/icons/signs.svg';
+import AboutIcon from '@/assets/icons/social.svg';
+import ResumeIcon from '@/assets/icons/business.svg';
+import PortfolioIcon from '@/assets/icons/file.svg';
+import ContactIcon from '@/assets/icons/signs.svg';
 
 import styles from './SideBar.module.css';
 

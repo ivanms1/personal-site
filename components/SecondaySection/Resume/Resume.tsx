@@ -2,19 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-import Testimonials from './Testimonials';
+import Testimonials from '../Testimonials';
 
-import Javascript from '../../assets/icons/javascript.svg';
-import ReactIcon from '../../assets/icons/react-icon.svg';
-import Nodejs from '../../assets/icons/nodejs.svg';
-import Typescript from '../../assets/icons/typescript.svg';
-import graphql from '../../assets/icons/graphql.png';
-import MongoDB from '../../assets/icons/mongodb.svg';
-import Sass from '../../assets/icons/sass.svg';
-import Cypress from '../../assets/icons/cypress.svg';
-import Checkmark from '../../assets/icons/checkmark.svg';
+import Javascript from '@/assets/icons/javascript.svg';
+import ReactIcon from '@/assets/icons/react-icon.svg';
+import Nodejs from '@/assets/icons/nodejs.svg';
+import Typescript from '@/assets/icons/typescript.svg';
+import graphql from '@/assets/icons/graphql.png';
+import MongoDB from '@/assets/icons/mongodb.svg';
+import Sass from '@/assets/icons/sass.svg';
+import Cypress from '@/assets/icons/cypress.svg';
+import Checkmark from '@/assets/icons/checkmark.svg';
 
-import { spring } from '../../helpers/animations';
+import { pageSpring } from '@/const/index';
 
 import styles from './Resume.module.css';
 
@@ -34,7 +34,7 @@ const Resume = () => {
     <motion.div
       initial={{ x: -500, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={spring}
+      transition={pageSpring}
     >
       <h1 className={styles.Title}>Resume</h1>
       <div className={styles.Experiences}>
